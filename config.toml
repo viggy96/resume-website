@@ -1,0 +1,226 @@
+# Page settings
+
+baseURL = "https://www.viggy96.me/"
+languageCode = "en"
+title = "Vignesh B."
+theme = "devresume"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+
+[params]
+    author = "Vignesh Balasubramaniam"
+    description = "Resume website"
+
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+
+    [params.profile]
+        enable = true
+        name = "Vignesh Balasubramaniam"
+        tagline = "Senior Firmware Engineer and Fullstack Developer"
+        avatar = "avatar.png"
+
+
+    [params.contact]
+        enable = true
+        location = "North Carolina"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:#"
+        text = "(704)359-7345"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "vigneshb.hp@gmail.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "#"
+        text = "www.viggy96.me"
+
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "C/C++"
+        [[params.skills.list.items]]
+        details = "Java"
+        [[params.skills.list.items]]
+        details = "Python"
+        [[params.skills.list.items]]
+        details = "JavaScript/Node.js"
+        [[params.skills.list.items]]
+        details = "Docker/KVM"
+        [[params.skills.list.items]]
+        details = "Jenkins/CI"
+        [[params.skills.list.items]]
+        details = "MySQL/MongoDB"
+        [[params.skills.list.items]]
+        details = "Firmware"
+        [[params.skills.list.items]]
+        details = "UEFI/BIOS"
+        [[params.skills.list.items]]
+        details = "Linux system management"
+        [[params.skills.list.items]]
+        details = "Object-oriented design"
+        [[params.skills.list.items]]
+        details = "Design and implement database structures"
+        [[params.skills.list.items]]
+        details = "Lead and deliver complex software systems"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Effective communication"
+        [[params.skills.list.items]]
+        details = "Team player"
+        [[params.skills.list.items]]
+        details = "Strong problem solver"
+        [[params.skills.list.items]]
+        details = "Good time management"
+
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "MSc in Computer Science"
+        university = "University of North Carolina"
+        dates = "2014 - 2018"
+        [[params.education.list]]
+        degree = "BSc Economics"
+        university = "University of North Carolina"
+        dates = "2014 - 2018"
+
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Native"
+        [[params.languages.list]]
+        name = "Tamil"
+        level = "Native"
+        [[params.languages.list]]
+        name = "Spanish"
+        level = "Working"
+        [[params.languages.list]]
+        name = "Japanese"
+        level = "Working"
+
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Open-Source development"
+        [[params.interests.list]]
+        name = "Robotics"
+        [[params.interests.list]]
+        name = "TV/Anime"
+        [[params.interests.list]]
+        name = "Videogames"
+
+
+    [params.summary]
+        enable = true
+        text = "I am an experienced software engineer with broad knowledge of a vast number of languages and industry technologies. I enjoy keeping up with the latest trends in software development, silicon chips, and technolgy as a whole."
+
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Senior Firmware Engineer and Fullstack Developer"
+        dates = "2018 - Present"
+        company = "Lenovo"
+        details = "Developing and customising UEFI for Lenovo's high end server solutions. Increasing development efficiency by creating user friendly build tools for internal use."
+        [[params.experience.list.items]]
+        details = "Developing UEFI to the needs of hyperscale customers"
+        [[params.experience.list.items]]
+        details = "Accelerating development using continuous integration with Jenkins"
+        [[params.experience.list.items]]
+        details = "Creating internal web apps for digitally signing customer deliverables"
+        [[params.experience.list.items]]
+        details = "Working with vendors such as Intel, AMD, and AMI to provide solutions to customers in a timely manner"
+
+        [[params.experience.list]]
+        title = "Server Infrastructure Engineer"
+        dates = "2016 - 2017"
+        company = "Ally Financial"
+        details = "Managed critical financial server infrastructure"
+        [[params.experience.list.items]]
+        details = "Made recommendations for saving over 50% in hardware and software costs"
+        [[params.experience.list.items]]
+        details = "Automated configuration changes for VMs"
+        [[params.experience.list.items]]
+        details = "Migrated VMs from VMWare to KVM"
+
+        [[params.experience.list]]
+        title = "Technical Support"
+        dates = "2014 - 2018"
+        company = "Department of Computer Science at University of North Carolina"
+        details = "Solving complex issues and providing solutions to users."
+        [[params.experience.list.items]]
+        details = "Managed department server system and maintained security"
+
+        [[params.experience.list]]
+        title = "Lead Android Developer and Fullstack Developer"
+        dates = "2016 - 2018"
+        company = "Startup"
+        details = "Built backend and multiple frontends for Agent, an app that sought to connect local venues and indie bands to make booking local musicians easier."
+        [[params.experience.list.items]]
+        details = "Developed user-friendly, convenient Android app for mobile use"
+        [[params.experience.list.items]]
+        details = "Developed responsive, high performance web app for browser use"
+
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "FIRST Robotics team #4561, TerrorBytes"
+        meta = "Mentorship"
+        tagline = "Taught and helped local community high school students about designing, building, and programming a robot in 6 weeks to compete in competition"
+
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/viggy96"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/viggy96"
+
