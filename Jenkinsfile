@@ -23,8 +23,7 @@ pipeline {
         
         stage('Run') {
             steps { 
-                sh  'daemonize -E JENKINS_NODE_COOKIE=dontKillMe ' +
-                    'hugo serve --baseURL https://www.viggy96.me --appendPort false --bind 0.0.0.0'
+                sh  'hugo serve --baseURL https://www.viggy96.me --appendPort false --bind 0.0.0.0 &'
             }
         }
     }
