@@ -1,6 +1,10 @@
-container_args =    '--restart always ' +
-                    '--volume $(pwd):/src ' +
-                    '--network service_default ' +  
+pipeline {
+    agent {
+        dockerfile {
+            filename 'Dockerfile'
+            additionalBuildArgs '--network dev_default'
+            args    '--restart always ' +
+                    '--network dev_default ' +  
                     '--label traefik.enable=true ' +
                     '--label traefik.http.services.resume.loadbalancer.server.port=1313 ' +
                     '--label traefik.http.routers.resume.entrypoints=http ' +
@@ -9,19 +13,17 @@ container_args =    '--restart always ' +
                     '--label traefik.http.routers.resume-secure.middlewares=secure@file ' +
                     '--label traefik.http.routers.resume-secure.tls=true ' +
                     '--label traefik.http.routers.resume-secure.tls.certresolver=http'
-pipeline {
-    agent any
+                   
+        }
+    }
     stages {
         stage('Build') {
-            steps {
-                sh 'docker build --tag hugo-builder:latest . --network dev_default'
-                sh 'docker run --volume $(pwd):/src hugo-builder hugo --minify'
-            }
+            steps { sh 'hugo --minify' }
         }
         
         stage('Run') {
             steps {
-                sh  'docker run ' + container_args + ' hugo-builder hugo serve --environment production --baseURL https://www.viggy96.me --bind 0.0.0.0'
+                sh  'JENKINS_NODE_COOKIE=dontKillMe hugo serve --baseURL https://www.viggy96.me --bind 0.0.0.0 &'
             }
         }
     }
