@@ -1,3 +1,5 @@
+ARG ENV=development
+
 FROM alpine:latest
 
 LABEL maintainer=vigneshb.hp@gmail.com
@@ -16,6 +18,8 @@ RUN curl -L https://bin.equinox.io/c/dhgbqpS8Bvy/minify-stable-linux-amd64.tgz |
 RUN addgroup -Sg 1000 hugo && adduser -SG hugo -u 1000 -h /src hugo
 
 WORKDIR /src
+
+RUN if ["$ENV" = "production"] ; then git clone https://github.com/viggy96/resume-website.git . ; fi
 
 CMD hugo --minify && hugo serve --baseURL https://www.viggy96.me --bind 0.0.0.0
 
