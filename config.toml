@@ -4,7 +4,7 @@ baseURL = "https://www.viggy96.me/"
 languageCode = "en"
 title = "Vignesh B."
 theme = "devresume"
-googleAnalytics = "UA-XXXXXXX-Y"
+googleAnalytics = "UA-69095131-4"
 
 
 [params]
