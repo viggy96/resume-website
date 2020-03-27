@@ -17,4 +17,6 @@ RUN addgroup -Sg 1000 hugo && adduser -SG hugo -u 1000 -h /src hugo
 
 WORKDIR /src
 
+CMD hugo --minify && hugo serve --baseURL https://www.viggy96.me --bind 0.0.0.0
+
 EXPOSE 1313
