@@ -1,4 +1,4 @@
-ARG ENV=development
+ARG URL=localhost
 
 FROM alpine:latest
 
@@ -19,8 +19,6 @@ RUN addgroup -Sg 1000 hugo && adduser -SG hugo -u 1000 -h /src hugo
 
 WORKDIR /src
 
-RUN if ["$ENV" = "production"] ; then git clone https://github.com/viggy96/resume-website.git . ; fi
-
-CMD hugo --minify && hugo serve --baseURL https://www.viggy96.me --bind 0.0.0.0
+ADD . /src
 
 EXPOSE 1313
