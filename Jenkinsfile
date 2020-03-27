@@ -1,11 +1,9 @@
 node {
     checkout scm
-    def website_container = docker.build("viggy96/resume-website", "--network dev_default .")
+    def website_container
 
     stage('Build') {
-        website_container.inside {
-            sh 'hugo --minify'
-        }
+        website_container = docker.build("viggy96/resume-website", "--network dev_default .")
     }
     
     stage('Test') {

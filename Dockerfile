@@ -21,4 +21,6 @@ WORKDIR /src
 
 ADD . /src
 
+RUN hugo --minify
+
 EXPOSE 1313
