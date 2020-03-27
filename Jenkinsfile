@@ -10,7 +10,7 @@ node {
     
     stage('Test') {
         website_container.inside {
-            sh  'hugo serve --baseURL localhost--bind 0.0.0.0'
+            sh  'timeout 15s hugo serve --baseURL localhost --bind 0.0.0.0'
         }
     }
 
