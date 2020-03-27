@@ -1,4 +1,4 @@
-container_args =    '--restart always ' 
+container_args =    '--restart always ' +
                     '--volume $(pwd):/src ' +
                     '--network service_default ' +  
                     '--label traefik.enable=true ' +
