@@ -18,7 +18,7 @@ pipeline {
     }
     stages {
         stage('Build') {
-            steps { sh 'hugo' }
+            steps { sh 'hugo --minify' }
         }
         
         stage('Run') {
