@@ -1,8 +1,4 @@
 node {
-    environment {
-        registry = "viggy96/resume-website"
-        registryCredential = ‘DockerHub’
-    }
     checkout scm
     def website_container = docker.build("viggy96/resume-website", "--network dev_default .")
 
@@ -18,9 +14,10 @@ node {
         }
     }
 
-    stage('Deploy') {
-        docker.withRegistry('', registryCredential) {
+    stage('Deploy') {     
+        docker.withRegistry('', 'DockerHub') {
             website_container.push()
         }
+        sh "docker rmi viggy96/resume-website:latest"
     }
 }
