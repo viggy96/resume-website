@@ -1,5 +1,3 @@
-ARG URL=localhost
-
 FROM alpine:latest
 
 LABEL maintainer=vigneshb.hp@gmail.com
