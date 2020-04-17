@@ -49,6 +49,8 @@ googleAnalytics = "UA-69095131-4"
         [[params.skills.list.items]]
         details = "C/C++"
         [[params.skills.list.items]]
+        details = "Go"
+        [[params.skills.list.items]]
         details = "Java"
         [[params.skills.list.items]]
         details = "Python"
