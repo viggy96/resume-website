@@ -1,0 +1,2 @@
+# Disable live reload in production
+disableLiveReload = true
