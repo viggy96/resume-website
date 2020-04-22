@@ -1,2 +1,3 @@
-# Disable live reload in production
+# Production settings
+baseURL = "https://www.viggy96.me"
 disableLiveReload = true
