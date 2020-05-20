@@ -3,7 +3,7 @@ node {
     def website_container
 
     stage('Build') {
-        website_container = docker.build("viggy96/resume-website", "--network dev_default .")
+        website_container = docker.build("viggy96/resume-website")
     }
     
     stage('Test') {
