@@ -28,10 +28,6 @@ googleAnalytics = "UA-69095131-4"
         location = "North Carolina"
 
         [[params.contact.list]]
-        icon = "fas fa-phone-square"
-        url = "tel:+17043597345"
-        text = "(704)359-7345"
-        [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:vigneshb.hp@gmail.com"
         text = "vigneshb.hp@gmail.com"
