@@ -21,4 +21,7 @@ ADD . /src
 
 RUN hugo --minify
 
-EXPOSE 1313
+RUN chmod +x /src/entrypoint.sh && ln -s /src/entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT [ "/entrypoint.sh" ]
+
