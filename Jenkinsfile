@@ -5,12 +5,6 @@ node {
     stage('Build') {
         website_container = docker.build("viggy96/resume-website")
     }
-    
-    stage('Test') {
-        website_container.inside {
-            sh  'timeout 15s hugo serve --baseURL localhost --bind 0.0.0.0'
-        }
-    }
 
     stage('Deploy') {     
         docker.withRegistry('', 'DockerHub') {
