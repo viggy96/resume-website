@@ -1,4 +1,5 @@
 # Production settings
 
+baseURL = "https://www.viggy96.me/"
 disableLiveReload = true
 minify = true

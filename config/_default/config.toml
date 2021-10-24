@@ -1,6 +1,6 @@
 # Page settings
 
-baseURL = "https://www.viggy96.me/"
+baseURL = "http://localhost/"
 languageCode = "en"
 title = "Vignesh B."
 theme = "devresume"
