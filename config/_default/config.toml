@@ -197,8 +197,19 @@ googleAnalytics = "UA-69095131-4"
 
         [[params.projects.list]]
         title = "FIRST Robotics team #4561, TerrorBytes"
+        dates = "2018 - 2022"
         meta = "Mentorship"
-        tagline = "Taught and helped local community high school students about designing, building, and programming a robot in 6 weeks to compete in competition"
+        details = "Taught and helped local community high school students about designing, building, and programming a robot in 6 weeks to compete in competition"
+        [[params.projects.list.items]]
+        details = "Developed vision system to automatically aim robot and adjust flywheel speeds based on distance to shoot at target"
+        [[params.projects.list.items]]
+        details = "Developed drive PID system to maintain robot orientation against defending robots and optimise traction"
+
+        [[params.projects.list]]
+        title = "FIRST Robotics team #3331, Tarheel Robotics"
+        dates = "2014 - 2018"
+        meta = "Mentorship"
+        details = "Taught and helped local community high school students about designing, building, and programming a robot in 6 weeks to compete in competition"
 
 
     [params.information]
