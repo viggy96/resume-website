@@ -19,7 +19,7 @@ googleAnalytics = "UA-69095131-4"
     [params.profile]
         enable = true
         name = "Vignesh Balasubramaniam"
-        tagline = "Senior Firmware Engineer and Fullstack Developer"
+        tagline = "Senior Systems Design Engineer"
         avatar = "avatar.png"
 
 
