@@ -148,8 +148,20 @@ googleAnalytics = "UA-69095131-4"
         enable = true
 
         [[params.experience.list]]
+        title = "Senior Systems Design Engineer"
+        dates = "2022 - Present"
+        company = "Advanced Micro Devices"
+        details = "Developing solutions and solving problems for AMD's embedded and server customers. "
+        [[params.experience.list.items]]
+        details = "Developing firmware to the needs of hyperscale customers and hardware vendors"
+        [[params.experience.list.items]]
+        details = "Resolving customer issues in a timely manner, enabling customers to release their products on schedule"
+        [[params.experience.list.items]]
+        details = "Working with large hyperscale customers to provide solutions to customers in a timely manner"
+
+        [[params.experience.list]]
         title = "Senior Firmware Engineer and Fullstack Developer"
-        dates = "2018 - Present"
+        dates = "2018 - 2022"
         company = "Lenovo"
         details = "Developing and customising UEFI for Lenovo's high end server solutions. Increasing development efficiency by creating user friendly build tools for internal use."
         [[params.experience.list.items]]
