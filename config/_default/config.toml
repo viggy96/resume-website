@@ -25,7 +25,7 @@ googleAnalytics = "UA-69095131-4"
 
     [params.contact]
         enable = true
-        location = "North Carolina"
+        location = "Texas"
 
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
