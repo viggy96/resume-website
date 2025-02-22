@@ -4,7 +4,11 @@ baseURL = "http://localhost/"
 languageCode = "en"
 title = "Vignesh B."
 theme = "devresume"
-googleAnalytics = "UA-69095131-4"
+googleAnalytics = "G-FFB362GV60"
+
+[privacy]
+    [privacy.googleAnalytics]
+        respectDoNotTrack = true
 
 
 [params]
