@@ -213,6 +213,8 @@ googleAnalytics = "UA-69095131-4"
         meta = "Mentorship"
         details = "Taught and helped local community high school students about designing, building, and programming a robot in 6 weeks to compete in competition"
         [[params.projects.list.items]]
+        details = "Developing open-source library known as [PurpleLib](https://github.com/lasarobotics/PurpleLib) to faciliate easier development of robot software, and bringing innovative new features to all FRC teams"
+        [[params.projects.list.items]]
         details = "Developed vision system to localise robot on the field"
         [[params.projects.list.items]]
         details = "Developed drive PID system to maintain robot orientation against defending robots and optimise traction"
