@@ -45,5 +45,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: viggy96/resume-website:latest
+          tags: |
+            ${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
